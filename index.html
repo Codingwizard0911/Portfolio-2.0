@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umapathi Odyssey</title>
+    <link rel="icon" href="images/code-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Cyberpunk style fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">CODING<span class="logo-highlight">WIZARD</span></span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#education" class="nav-item">Education</a></li>
+            <li><a href="#experience" class="nav-item">Experience</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+            <li><a href="#resume" class="nav-item">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="glitch-text" data-text="JOHN DOE">UMAPATHI R</h1>
+            <div class="typing-container">
+              <span class="static-text">I'm an Aspiring  </span>
+              <span class="dynamic-text" id="typingText"></span>
+              <span class="cursor">|</span>
+            </div>
+      
+                <p class="hero-description">Crafting Future-Ready Digital Experiences with Purpose and Passion</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-button primary">Explore Projects</a>
+                    <a href="#contact" class="cta-button secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hexagon">
+                    <img src="images/profile_cyber.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="particles-container" id="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="ABOUT ME">ABOUT ME</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Driven by curiosity and powered by data, I specialize in turning complex information into clear, actionable insights. With hands-on experience in tools like Python, Tableau,Power BI and Scikit-learn, I enjoy uncovering trends, visualizing data, and solving real-world problems. </p>
+                <p>My passion lies in combining analytical thinking with creativity to craft solutions that truly make an impact. Whether it’s building dashboards or exploring machine learning models, I thrive on challenges that push me to grow. Always learning, always building — I’m here to shape the future with data..</p>
+            </div>
+            <div class="about-timeline">
+                <div class="timeline-item" data-year="2022">
+                    <h3>Building the Base</h3>
+                    <p>Started with Python, and as a college football team member, I’ve been coding and competing in sync</p>
+                </div>
+                <div class="timeline-item" data-year="2023">
+                    <h3>Mastering SQL and Tableau</h3>
+                    <p>Developed expertise in SQL and Tableau, empowering myself to extract, analyze, and visualize data for impactful decision-making.</p>
+                </div>
+                <div class="timeline-item" data-year="2024">
+                    <h3>xploring Power BI and Excel</h3>
+                    <p>Mastered Power BI and Excel to design powerful, interactive dashboards, transforming complex data into clear, actionable insights for strategic decision-making.</p>
+                </div>
+                <div class="timeline-item" data-year="2025">
+                    <h3>Java Journey: Still Loading...</h3>
+                    <p>On my way to mastering Java programming, constantly evolving and refining my skills to build efficient, scalable solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="SKILLS">SKILLS</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="skills-container">
+            <!-- Frontend Skills -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Python">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>PYTHON</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="CSS3">
+                        <div class="skill-icon">
+                            <i class="fab fa-c"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>C</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JAVA</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Backend Skills -->
+            <div class="skill-category">
+                <h3>Data Visualization</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Python">
+                        <div class="skill-icon">
+                            <i class="fab fa-salesforce"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>TABLEAU</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Flask">
+                        <div class="skill-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>POWER BI</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="API">
+                        <div class="skill-icon">
+                            <i class="fas fa-file-csv"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>EXCEL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 58%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Database">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools Skills -->
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Git">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 68%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="DevOps">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="UI/UX">
+                        <div class="skill-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>SELENIUM</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="Testing">
+                        <div class="skill-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>API's</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="PROJECTS">PROJECTS</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="projects-grid">
+           <!-- Project 8 -->
+<div class="project-card" data-project="8">
+    <div class="project-image">
+        <img src="images/busloyaltyai.png" alt="Project 8">
+    </div>
+    <div class="project-info">
+        <h3>BusLoyalty AI</h3>
+        <p>Developed an AI-based model to predict and enhance customer loyalty for bus service providers using historical data and machine learning techniques.</p>
+        <div class="project-tech">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Pandas</span>
+            <span>Plotly</span>
+            <span>Streamlit</span>
+        </div>
+        <div class="project-links">
+            <a href="#" class="project-link">GitHub</a>
+        </div>
+    </div>
+</div>
+            
+            <div class="project-card" data-project="7">
+                <div class="project-image">
+                    <img src="images/covid.png" alt="Project 7">
+                </div>
+                <div class="project-info">
+                    <h3>Covid Dataset Visualization</h3>
+                    <p>Analyzed and visualized Covid-19 data to identify trends, hotspots, and key insights using data visualization tool.</p>
+                    <div class="project-tech">
+                     
+                        <span>Power BI</span>
+                       
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+<div class="project-card" data-project="6">
+    <div class="project-image">
+        <img src="images/insurance.png" alt="Project 6">
+    </div>
+    <div class="project-info">
+        <h3>Insurance Prediction and Dashboard</h3>
+        <p>Developed a predictive model to forecast insurance claims and trends using historical data and machine learning techniques.</p>
+        <div class="project-tech">
+            <span>Python</span>
+            <span>Power BI</span>
+        </div>
+        <div class="project-links">
+            <a href="#" class="project-link">GitHub</a>
+        </div>
+    </div>
+</div>
+            
+            <!-- Project 4 -->
+            <div class="project-card" data-project="4">
+                <div class="project-image">
+                    <img src="images/decisiontree.png" alt="Project 4">
+                </div>
+                <div class="project-info">
+                    <h3>Decision Tree Classifier for Iris Flower Prediction"</h3>
+                    <p>Built and trained a decision tree model on the Iris dataset to classify flower species, evaluated performance using accuracy, and visualized the tree structure for better interpretation.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Pandas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card" data-project="5">
+                <div class="project-image">
+                    <img src="images/websitetrafficanalysis.png" alt="Project 5">
+                </div>
+                <div class="project-info">
+                    <h3>Website Traffic Analysis</h3>
+                    <p>Analyzed website traffic using analytics tools to identify user behavior, optimize performance, and enhance user engagement.</p>
+                    <div class="project-tech">
+                        <span>IBM Cognos Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card" data-project="6">
+                <div class="project-image">
+                    <img src="images/instabot.png" alt="Project 6">
+                </div>
+                <div class="project-info">
+                    <h3>Instabot</h3>
+                    <p>Tested Instagram's functionality, ensuring seamless user experience and identifying bugs across various devices and platforms.</p>
+                    <div class="project-tech">
+                        <span>Pyhton</span>
+                        <span>Selenium</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- Project Modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <h2 id="modalTitle">Insurance Prediction and Dashboard</h2>
+                    <div class="modal-image">
+                        <img id="modalImage" src="" alt="Project Image">
+                    </div>
+                    <div class="modal-description">
+                        <p id="modalDescription">Developed a predictive model to forecast insurance claims and trends using historical data and machine learning techniques.</p>
+                    </div>
+                    <div class="modal-tech" id="modalTech">
+                        <span>Python</span>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="modal-links">
+                        <a href="#" id="modalGithub" class="modal-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="EDUCATION">EDUCATION</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="education-timeline">
+            <!-- Education 1 -->
+            <div class="edu-item">
+                <div class="edu-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-date">2021 - 2025</div>
+                    <h3>Bachelor of Technology in Information Technology</h3>
+                    <h4>R P Sarathy Institute of Technology</h4>
+                    <p>Specialized in Data Analyst, Data Scientist and QA Engineer. Graduating Soon, Excited!.</p>
+                    <div class="edu-details">
+                        <ul>
+                            <li>College Football Member 2022-2024</li>
+                            <li>Final Project: BusLoyalty AI</li>
+                            <li>GPA: 3.5/4.0 | CGPA: 8.5/10</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education 2 -->
+            <div class="edu-item">
+                <div class="edu-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-date">2023 - 2024</div>
+                    <h3>Data Science and Machine Learning</h3>
+                    <h4>Coding Ninjas</h4>
+                    <p>Advanced studies in Data Science practices and technologies.</p>
+                    <div class="edu-details">
+                        <ul>
+                            <li>Focused on: Python, Tableau, and Machine Learning</li>
+                            <li>Key Projects: Decision Tree Model, InstaBot, and Data Visualization with Tableau</li>
+                            <li>Additional Skills: Data Cleaning, Predictive Modeling, and Automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education 3 -->
+            <div class="edu-item">
+                <div class="edu-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-date">2020-2021</div>
+                    <h3>Higher Secondary Education</h3>
+                    <h4>Government Higher Secondary School</h4>
+                    <p>Building strong foundations in sciences and team sports.</p>
+                    <div class="edu-details">
+                        <ul>
+                            <li>Built strong foundations in Mathematics, Physics, Chemistry, and Biology</li>
+<li>School Football Team Member</li>
+<li>Percentage: 85.3%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education 4 -->
+            <div class="edu-item">
+                <div class="edu-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-date">2018-2019</div>
+                    <h3>Secondary Education</h3>
+                    <h4>Government Higher Secondary School</h4>
+                    <p>Mastered the fundamentals, excelling in core subjects.</p>
+                    <div class="edu-details">
+                        <ul>
+                            <li>Core Subjects: Mathematics, Science, and English</li>
+                            <li>Active participated in school sports</li>
+                            <li>Percentage: 79.4%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="EXPERIENCE">EXPERIENCE</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="exp-timeline">
+            <!-- Experience 1 -->
+            <div class="exp-item">
+                <div class="exp-date">Present</div>
+                <div class="exp-content">
+                    <h3>Aspiring Data Analyst</h3>
+                    <h4>Open to Opportunities</h4>
+                    <p>Driven to uncover insights from data using tools like Python, SQL, Tableau, and Excel to support data-driven decision-making.</p>
+                    <div class="exp-details">
+                        <ul>
+                            <li>Proficient in data cleaning, visualization, and analysis</li>
+                            <li>Worked on personal projects involving predictive modeling and data storytelling</li>
+                            <li>Continuously enhancing skills through online courses and real-world applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+          <!-- Experience 2 -->
+<div class="exp-item">
+    <div class="exp-date">Jan 2025 - Apr 2025</div>
+    <div class="exp-content">
+        <h3>Data Analyst Intern</h3>
+        <h4>Vcodez</h4>
+        <p>Focused on data analysis, reporting, and visualization to drive data-driven insights and decisions.</p>
+        <div class="exp-details">
+            <ul>
+                <li>Used Power BI and Excel for data analysis and reporting</li>
+                <li>Developed various data visualizations to enhance decision-making</li>
+                <li>Provided Insurance Prediction and Forecast project, providing actionable insights</li>
+            </ul>
+        </div>
+    </div>
+</div>
+  
+            <!-- Experience 3 -->
+<div class="exp-item">
+    <div class="exp-date">Jan 2023 - Feb 2023</div>
+    <div class="exp-content">
+        <h3>UI/UX Intern</h3>
+        <h4>Fifth Gen InfoTech</h4>
+        <p>Learned UI/UX principles and applied them to create user-centered designs for web and mobile applications.</p>
+        <div class="exp-details">
+            <ul>
+                <li>Learned core UI/UX principles and design best practices</li>
+                <li>Created wireframes and prototypes for user interfaces</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="CONTACT ME">CONTACT ME</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>umapathiu0911@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+91 9042180833</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Dharmapuri, Tamil Nadu   </p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Codingwizard0911" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/umapathi-ramesh-279289226" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com/@codingwizard0911" class="social-link"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" action="/send_email" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name" class="form-label">Your Name</label>
+                        <div class="form-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" class="form-label">Your Email</label>
+                        <div class="form-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject"  required spellcheck="true">
+                        <label for="subject" class="form-label">Subject</label>
+                        <div class="form-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required spellcheck="true"></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                        <div class="form-border"></div>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>SEND MESSAGE</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="section-header">
+            <h2 class="glitch-text" data-text="RESUME">RESUME</h2>
+            <div class="section-underline"></div>
+        </div>
+        <div class="resume-container">
+            <!-- Section for viewing resume -->
+            <div class="resume-view">
+                <a href="resume/resume.html" target="_blank" class="download-button">
+                    <i class="fas fa-external-link"></i>
+                    <span>Xplore My Journey</span></a>
+            </div>
+        
+            <!-- Section for downloading resume -->
+            <div class="resume-content">
+                               <a href="resume/UMAPATHI_R_9042180833_QA.pdf" download class="download-button">
+                    <span>DOWNLOAD CV</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+        
+          <!--  <div class="resume-preview">
+                <img src="resume-preview.png" alt="Resume Preview">
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">CODING<span class="logo-highlight">WIZARD</span></span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Codingwizard0911" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/umapathi-ramesh-279289226" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@codingwizard0911" class="social-link"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CODINGWIZARD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

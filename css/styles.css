@@ -112,7 +112,7 @@ a:hover {
     padding: 15px 50px;
     z-index: 1000;
     background-color: rgba(5, 5, 16, 0.9);
-    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
@@ -1875,3 +1875,157 @@ textarea {
     color: #0ff;
     text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
 }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: rgba(5, 5, 16, 0.95);
+        padding: 10px 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        padding: 0;
+    }
+
+    .edu-item {
+        width: 100%;
+        left: 0 !important;
+        transform: translateX(0) !important;
+    }
+
+    .education-timeline::before {
+        left: 10px;
+        transform: none;
+    }
+
+    .edu-item::before {
+        left: -10px !important;
+        right: auto !important;
+    }
+    
+    #my-name{
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+/* Mobile Popup Modal Style */
+.mobile-popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 16, 0.95);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.popup-content {
+    background: var(--darker-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--light-color);
+    font-family: var(--font-mono);
+    padding: 25px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px var(--secondary-color);
+    position: relative;
+    max-width: 300px;
+    animation: fadeInPopup 0.5s ease-out;
+}
+
+.popup-content p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 8px var(--primary-color);
+}
+
+.close-popup {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.close-popup:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+@keyframes fadeInPopup {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .mobile-popup-modal {
+        display: flex;
+    }
+}
+
+

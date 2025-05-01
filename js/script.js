@@ -155,4 +155,5 @@ contactForm.addEventListener('submit', function (e) {
         submitBtn.innerHTML = originalBtnText;
         submitBtn.disabled = false;
     });
+    
 });

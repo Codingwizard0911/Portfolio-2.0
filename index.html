@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umapathi Odyssey</title>
-    <link rel="icon" href="images/code-solid.svg" type="image/x-icon">
+    <title class="page-title">Umapathi Odyssey</title>
+ <style>   .page-title {
+        font-family: 'Arial', sans-serif;
+        color: #4A90E2;
+        text-align: center;
+        font-size: 36px;
+      }</style>
+      
+    <link rel="icon" href="images/icon_main.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts - Cyberpunk style fonts -->
@@ -46,9 +53,9 @@
     <section id="home" class="hero">
         <div class="hero-content">
           <div class="hero-text">
-            <h1 class="glitch-text" data-text="JOHN DOE">UMAPATHI R</h1>
+            <h1 class="glitch-text" id="my-name" data-text="JOHN DOE">UMAPATHI R</h1>
             <div class="typing-container">
-              <span class="static-text">I'm an Aspiring  </span>
+              <span class="static-text">Aspiring  </span>
               <span class="dynamic-text" id="typingText"></span>
               <span class="cursor">|</span>
             </div>
@@ -672,7 +679,83 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <div class="mobile-popup-modal" id="mobilePopup">
+        <div class="popup-content">
+          <span class="close-popup" id="closePopup">✖</span>
+          <p>For the best experience, please view this portfolio on a Laptop or PC.</p>
+        </div>
+      </div>
+     <script src="script.js"></script> 
+<script>      
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get popup elements
+        const popup = document.getElementById("mobilePopup");
+        const closeBtn = document.getElementById("closePopup");
+        
+        console.log("Popup:", popup);
+        console.log("Close button:", closeBtn);
+        
+        // Show popup on mobile devices
+        if (window.innerWidth <= 768 && popup) {
+            popup.style.display = "flex";
+        }
+        
+        // Add event listener to close button
+        if (closeBtn) {
+            closeBtn.addEventListener("click", function(e) {
+                console.log("Close button clicked");
+                if (popup) {
+                    popup.style.display = "none";
+                }
+                // Stop event propagation
+                e.stopPropagation();
+            });
+        }
+        
+        // Alternative direct approach with onclick
+        if (closeBtn && popup) {
+            closeBtn.onclick = function() {
+                console.log("Close button onclick triggered");
+                popup.style.display = "none";
+                return false; // Prevent default
+            };
+        }
+    });
+    
+    // ========== Dynamic Typing Text ==========
+const words = ["Data Scientist", "Data Analyst", "QA Engineer", "SQL Developer"];
+let wordIndex = 0;
+let charIndex = 0;
+const typingText = document.getElementById("typingText");
+const typingSpeed = 150;
+const erasingSpeed = 100;
+const delayBetweenWords = 1000;
+
+function type() {
+    if (charIndex < words[wordIndex].length) {
+        typingText.textContent += words[wordIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+    } else {
+        setTimeout(erase, delayBetweenWords);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typingText.textContent = words[wordIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+    } else {
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, typingSpeed);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(type, delayBetweenWords);
+});</script>
+    
+      
 </body>
 </html>
